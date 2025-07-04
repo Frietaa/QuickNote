@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickNote</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">QuickNote</div>
+      <button class="toggle-dark" id="toggle-dark">🌙 Dark Mode</button>
+    </header>
+
+    <section class="note-input">
+      <textarea
+        id="note-text"
+        rows="3"
+        placeholder="Tulis catatan cepat di sini..."
+      ></textarea>
+      <input
+        type="text"
+        id="note-tags"
+        placeholder="Tambahkan tag (misal: #kerja #ide)"
+      />
+      <button id="submit-note">Simpan Catatan</button>
+    </section>
+
+    <section class="search-box">
+      <input type="text" id="search-input" placeholder="Cari catatan..." />
+    </section>
+
+    <section class="note-list" id="note-list">
+      <!-- Notes will appear here -->
+    </section>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
