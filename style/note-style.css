@@ -1,3 +1,21 @@
+:root {
+  --primary-purple: #7a5fff;
+  --primary-blue: #4dc6ff;
+  --background: #f9fafb;
+  --surface: #ffffff;
+  --text-primary: #1f2937;
+  --text-secondary: #6b7280;
+  --hover-bg: #e0e7ff;
+  --dark-bg: #111827;
+  --dark-surface: #1f2937;
+  --dark-text: #f3f4f6;
+}
+
+* {
+  text-decoration: none;
+  outline: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,11 +26,32 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #7a5fff;
-  color: white;
+  justify-content: space-between;
+  margin: 2rem 2%;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Gidole", sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: var(--background);
+  color: var(--primary-purple);
+}
+
+.logo span {
+  color: var(--dark-surface);
+}
+
+.logo img {
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 .editor-toolbar {

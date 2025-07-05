@@ -3,19 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuickNote</title>
+    <title>ExBrain - Tulis semua ingatanmu</title>
+    <link rel="icon" href="assets/svg/brain.svg" />
+
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gidole&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
+    <!-- header in -->
     <header>
-      <div class="logo">QuickNote</div>
+      <div class="logo">
+        <img src="assets/svg/brain.svg" alt="logo" />
+        Ex<span>Brain</span>
+      </div>
       <button class="toggle-dark" id="toggle-dark">🌙 Dark Mode</button>
     </header>
+    <!-- header out -->
 
+    <!-- note-input in -->
     <section class="note-input">
       <textarea
         id="note-text"
@@ -29,7 +46,9 @@
       />
       <button id="submit-note">Simpan Catatan</button>
     </section>
+    <!-- note-input out -->
 
+    <!-- note-list in -->
     <section class="search-box">
       <input type="text" id="search-input" placeholder="Cari catatan..." />
     </section>
@@ -37,7 +56,9 @@
     <section class="note-list" id="note-list">
       <!-- Notes will appear here -->
     </section>
+    <!-- note-list out -->
 
+    <!-- script -->
     <script src="script/script.js"></script>
   </body>
 </html>

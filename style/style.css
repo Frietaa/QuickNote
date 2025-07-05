@@ -35,12 +35,29 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .logo {
+  font-family: "Gidole", sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
   font-size: 1.5rem;
   font-weight: 700;
+  background-color: var(--background);
   color: var(--primary-purple);
+}
+
+.logo span {
+  color: var(--dark-surface);
+}
+
+.logo img {
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 .toggle-dark {
